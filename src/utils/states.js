@@ -1,238 +1,238 @@
 export const states = [
     {
         "name": "Alabama",
-        "value": "AL"
+        "abbreviation": "AL"
     },
     {
         "name": "Alaska",
-        "value": "AK"
+        "abbreviation": "AK"
     },
     {
         "name": "American Samoa",
-        "value": "AS"
+        "abbreviation": "AS"
     },
     {
         "name": "Arizona",
-        "value": "AZ"
+        "abbreviation": "AZ"
     },
     {
         "name": "Arkansas",
-        "value": "AR"
+        "abbreviation": "AR"
     },
     {
         "name": "California",
-        "value": "CA"
+        "abbreviation": "CA"
     },
     {
         "name": "Colorado",
-        "value": "CO"
+        "abbreviation": "CO"
     },
     {
         "name": "Connecticut",
-        "value": "CT"
+        "abbreviation": "CT"
     },
     {
         "name": "Delaware",
-        "value": "DE"
+        "abbreviation": "DE"
     },
     {
         "name": "District Of Columbia",
-        "value": "DC"
+        "abbreviation": "DC"
     },
     {
         "name": "Federated States Of Micronesia",
-        "value": "FM"
+        "abbreviation": "FM"
     },
     {
         "name": "Florida",
-        "value": "FL"
+        "abbreviation": "FL"
     },
     {
         "name": "Georgia",
-        "value": "GA"
+        "abbreviation": "GA"
     },
     {
         "name": "Guam",
-        "value": "GU"
+        "abbreviation": "GU"
     },
     {
         "name": "Hawaii",
-        "value": "HI"
+        "abbreviation": "HI"
     },
     {
         "name": "Idaho",
-        "value": "ID"
+        "abbreviation": "ID"
     },
     {
         "name": "Illinois",
-        "value": "IL"
+        "abbreviation": "IL"
     },
     {
         "name": "Indiana",
-        "value": "IN"
+        "abbreviation": "IN"
     },
     {
         "name": "Iowa",
-        "value": "IA"
+        "abbreviation": "IA"
     },
     {
         "name": "Kansas",
-        "value": "KS"
+        "abbreviation": "KS"
     },
     {
         "name": "Kentucky",
-        "value": "KY"
+        "abbreviation": "KY"
     },
     {
         "name": "Louisiana",
-        "value": "LA"
+        "abbreviation": "LA"
     },
     {
         "name": "Maine",
-        "value": "ME"
+        "abbreviation": "ME"
     },
     {
         "name": "Marshall Islands",
-        "value": "MH"
+        "abbreviation": "MH"
     },
     {
         "name": "Maryland",
-        "value": "MD"
+        "abbreviation": "MD"
     },
     {
         "name": "Massachusetts",
-        "value": "MA"
+        "abbreviation": "MA"
     },
     {
         "name": "Michigan",
-        "value": "MI"
+        "abbreviation": "MI"
     },
     {
         "name": "Minnesota",
-        "value": "MN"
+        "abbreviation": "MN"
     },
     {
         "name": "Mississippi",
-        "value": "MS"
+        "abbreviation": "MS"
     },
     {
         "name": "Missouri",
-        "value": "MO"
+        "abbreviation": "MO"
     },
     {
         "name": "Montana",
-        "value": "MT"
+        "abbreviation": "MT"
     },
     {
         "name": "Nebraska",
-        "value": "NE"
+        "abbreviation": "NE"
     },
     {
         "name": "Nevada",
-        "value": "NV"
+        "abbreviation": "NV"
     },
     {
         "name": "New Hampshire",
-        "value": "NH"
+        "abbreviation": "NH"
     },
     {
         "name": "New Jersey",
-        "value": "NJ"
+        "abbreviation": "NJ"
     },
     {
         "name": "New Mexico",
-        "value": "NM"
+        "abbreviation": "NM"
     },
     {
         "name": "New York",
-        "value": "NY"
+        "abbreviation": "NY"
     },
     {
         "name": "North Carolina",
-        "value": "NC"
+        "abbreviation": "NC"
     },
     {
         "name": "North Dakota",
-        "value": "ND"
+        "abbreviation": "ND"
     },
     {
         "name": "Northern Mariana Islands",
-        "value": "MP"
+        "abbreviation": "MP"
     },
     {
         "name": "Ohio",
-        "value": "OH"
+        "abbreviation": "OH"
     },
     {
         "name": "Oklahoma",
-        "value": "OK"
+        "abbreviation": "OK"
     },
     {
         "name": "Oregon",
-        "value": "OR"
+        "abbreviation": "OR"
     },
     {
         "name": "Palau",
-        "value": "PW"
+        "abbreviation": "PW"
     },
     {
         "name": "Pennsylvania",
-        "value": "PA"
+        "abbreviation": "PA"
     },
     {
         "name": "Puerto Rico",
-        "value": "PR"
+        "abbreviation": "PR"
     },
     {
         "name": "Rhode Island",
-        "value": "RI"
+        "abbreviation": "RI"
     },
     {
         "name": "South Carolina",
-        "value": "SC"
+        "abbreviation": "SC"
     },
     {
         "name": "South Dakota",
-        "value": "SD"
+        "abbreviation": "SD"
     },
     {
         "name": "Tennessee",
-        "value": "TN"
+        "abbreviation": "TN"
     },
     {
         "name": "Texas",
-        "value": "TX"
+        "abbreviation": "TX"
     },
     {
         "name": "Utah",
-        "value": "UT"
+        "abbreviation": "UT"
     },
     {
         "name": "Vermont",
-        "value": "VT"
+        "abbreviation": "VT"
     },
     {
         "name": "Virgin Islands",
-        "value": "VI"
+        "abbreviation": "VI"
     },
     {
         "name": "Virginia",
-        "value": "VA"
+        "abbreviation": "VA"
     },
     {
         "name": "Washington",
-        "value": "WA"
+        "abbreviation": "WA"
     },
     {
         "name": "West Virginia",
-        "value": "WV"
+        "abbreviation": "WV"
     },
     {
         "name": "Wisconsin",
-        "value": "WI"
+        "abbreviation": "WI"
     },
     {
         "name": "Wyoming",
-        "value": "WY"
+        "abbreviation": "WY"
     }
 ];
