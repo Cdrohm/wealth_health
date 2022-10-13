@@ -7,7 +7,7 @@ export const EmployeesContext = createContext()
 const initialState = JSON.parse(localstorage.getItem('employees')) || EmployeesContext
 
 //provider
-function employeeProvider(props) {
+function EmployeesProvider(props) {
     const [employees, setEmployees] = useState (initialState)
     const [initForm, setInitForm] = useState(false)
 
@@ -30,26 +30,26 @@ function employeeProvider(props) {
         setEmployees([...employees, employee])
     }
 
-    //remove employee by name
-    function removeByName(index) {
-        const copy = [...employees]
-        let indexes = copy
-            .map((employee, i) => {
-                if (employee.firstname.includes(name) || employee.lastName.includes(name)) {
-                    return i
-                }
-                return null
-            })
-            .filter(elt => elt ! == null)
-            //console lolg d'indexes
-            indexes.forEach(index => removeByIndex(index))
-    }
-
     //remove employee by index
     function removeByIndex(index) {
         const copy = [...employees]
         copy.splice(index, 1)
         setEmployees(copy)
+    }
+
+    //remove employee by name
+    function removeByName(name) {
+        const copy = [...employees]
+        let indexes = copy
+            .map((employee, i) => {
+                if (employee.firstName.includes(name) || employee.lastName.includes(name)) {
+                    return i
+                }
+                return null
+            })
+            .filter(elt => elt !== null)
+        console.log(indexes);
+        indexes.forEach(index => removeByIndex(index))
     }
 
     //data employee

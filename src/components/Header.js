@@ -1,4 +1,4 @@
-import '../style/header.scss'
+import '../style/header.css'
 import { useEffect, useRef, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 

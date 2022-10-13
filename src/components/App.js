@@ -4,23 +4,24 @@ import Footer from './Footer'
 import Create from '../pages/CreateEmployee'
 import View from '../pages/ViewEmployee'
 import Error from '../pages/Error'
-import './App.css';
+import { EmployeesContext } from '../context/employeesContext'
+import '../style/App.css';
 
 function App() {
   return (
-    <EmployeeProvider>
+    <EmployeesContext>
     <BrowserRouter basename="wealth_health">
       <div className='App'>
       <Header />
       <Routes>
         <Route path='/' element={<Create />} />
-        <Route path='/view' element= />
-        <Route path='*' element= />
+        <Route path='/view' element={<View />} />
+        <Route path='*' element={<Error />} />
       </Routes>
       <Footer />
     </div>
     </BrowserRouter>
-    </EmployeeProvider>
+    </EmployeesContext>
   );
 }
 
