@@ -1,27 +1,27 @@
 import { createContext, useContext, useEffect, useState } from "react";
-//import employee bdd
+//import { employees } bdd (localstorage)
 
 export const EmployeesContext = createContext()
 
 //initial state
-const initialState = JSON.parse(localstorage.getItem('employees')) || EmployeesContext
+const initialState = JSON.parse(localstorage.getItem('employees')) || employees
 
 //provider
-function EmployeesProvider(props) {
-    const [employees, setEmployees] = useState (initialState)
+function EmployeeProvider(props) {
+    const [employees, setEmployees] = useState(initialState)
     const [initForm, setInitForm] = useState(false)
 
     //sort by / table management
-    const [sortBy, setSortBy] = useState (null)
-    const [sortWay, setSortWay] = useState (null)
-    const sortSortOut = {setSortBy, setSortWay}
-    const sortInfo = {sortBy, sortWay}
+    const [sortBy, setSortBy] = useState(null)
+    const [sortWay, setSortWay] = useState(null)
+    const setSorting = { setSortBy, setSortWay }
+    const sortInfo = { sortBy, sortWay }
 
-    // formularie composent initialisation
-    const [init, setInit] = useState (false)
-    const initComponent = {init, setInit}
+    // form composent initialisation
+    const [init, setInit] = useState(false)
+    const initComponent = { init, setInit }
 
-    useEffect (() => {
+    useEffect(() => {
         localStorage.setItem('employees', JSON.stringify(employees))
     }, [employees])
 
@@ -57,13 +57,20 @@ function EmployeesProvider(props) {
         employees,
         initForm,
         setInitForm,
-        sortSortOut,
+        setSorting,
         sortInfo,
         initComponent,
         add,
-        removeByName,
-        removeByIndex
+        removeByIndex,
+        removeByName
     }
     return (<EmployeesContext.Provider value={employeesData} {...props} />)
 }
 
+// hook context
+function useEmployeesContext() {
+    return useContext(EmployeesContext)
+}
+
+// export for provider and hook context
+export { EmployeeProvider, useEmployeesContext }

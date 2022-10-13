@@ -1,4 +1,4 @@
-import '../style/footer.scss'
+import '../style/footer.css'
 import logo from '../assets/logoOnly.png'
 
 const Footer = () => {

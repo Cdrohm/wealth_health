@@ -5,7 +5,7 @@ import Create from '../pages/CreateEmployee'
 import View from '../pages/ViewEmployee'
 import Error from '../pages/Error'
 import { EmployeesContext } from '../context/employeesContext'
-import '../style/App.css';
+import '../style/App.css'
 
 function App() {
   return (
