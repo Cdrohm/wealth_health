@@ -8,19 +8,19 @@ import './App.css';
 
 function App() {
   return (
-    <Provider>
+    <EmployeeProvider>
     <BrowserRouter basename="wealth_health">
       <div className='App'>
       <Header />
       <Routes>
-        <Route path='/' element= />
+        <Route path='/' element={<Create />} />
         <Route path='/view' element= />
         <Route path='*' element= />
       </Routes>
       <Footer />
     </div>
-    <BrowserRouter/>
-    </Provider>
+    </BrowserRouter>
+    </EmployeeProvider>
   );
 }
 

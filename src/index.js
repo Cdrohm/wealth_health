@@ -1,13 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import {faChevronUp, faChevronDown, faSort, faSortUp, faSortDown} from '@fortawesome/free-solid-svg-icons'
+import App from './components/App';
 import reportWebVitals from './reportWebVitals';
+
+//import fontawesome icons
+library.add(faChevronUp, faChevronDown, faSort, faSortUp, faSortDown)
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <div className='container'>
     <App />
+    </div>
   </React.StrictMode>
 );
 
