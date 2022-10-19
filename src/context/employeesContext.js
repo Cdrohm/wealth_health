@@ -4,6 +4,7 @@ import { createContext, useContext, useEffect, useState } from "react";
 export const EmployeesContext = createContext()
 
 //initial state
+//bdd employees
 const initialState = JSON.parse(localstorage.getItem('employees')) || employees
 
 //provider
