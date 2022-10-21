@@ -1,3 +1,5 @@
+
+//abbreviation to value? for easily keep
 export const states = [
     {
         "name": "Alabama",

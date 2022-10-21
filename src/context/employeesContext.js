@@ -1,11 +1,12 @@
 import { createContext, useContext, useEffect, useState } from "react";
-//import { employees } bdd (localstorage)
+import { employees } from '../utils/DataEmployees'
 
+//context
 export const EmployeesContext = createContext()
 
 //initial state
-//bdd employees
-const initialState = JSON.parse(localstorage.getItem('employees')) || employees
+//need bdd employees
+const initialState = JSON.parse(localStorage.getItem('WH_employees')) || employees
 
 //provider
 function EmployeeProvider(props) {
