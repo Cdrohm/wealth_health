@@ -1,4 +1,4 @@
-import '../style/datepicker.css'
+import '../style/datePicker.css'
 import React, { Fragment, useEffect, useRef, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import PropTypes from 'prop-types'

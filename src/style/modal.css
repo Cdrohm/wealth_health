@@ -1,0 +1,48 @@
+.modal-confirm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    /* padding: 20% 40% 65% 40% ; */
+
+}
+
+.modal-confirm-message {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    color: white;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: rgba(0,0,0,.7);
+}
+
+.modal-confirm-btn {
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+    .modal-confirm-message,
+    .modal-confirm-btn {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .modal-confirm {
+        padding-bottom: 70%;
+    }
+    .modal-confirm-message,
+    .modal-confirm-btn {
+        font-size: .8rem;
+    }
+}
