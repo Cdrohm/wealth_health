@@ -1,0 +1,81 @@
+.picker-container {
+	position: relative;
+}
+
+.picker {
+	position: absolute;
+	z-index: 5;
+	top: 15px;
+	left: 50px;
+	display: none;
+	border-radius: 10px;
+	border-right: 1px solid var(--green-superdark);
+	border-bottom: 1px solid var(--green-superdark);
+	box-shadow: 5px 5px 10px grey;
+	background: var(--green-medium);
+}
+
+.picker-month,
+.picker-day,
+.picker-year {
+	width: 50px;
+}
+
+.picker-month,
+.picker-day {
+	border-right: 1px solid black;
+}
+
+.picker-year {
+	width: 100px;
+}
+
+.picker-month:hover,
+.picker-day:hover,
+.picker-year:hover {
+    background-color: var(--green-dark);
+	cursor: ns-resize;
+}
+
+.picker-month:hover {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.picker-year:hover {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.picker-month:hover > .picker-number,
+.picker-day:hover > .picker-number,
+.picker-year:hover > .picker-number {
+    font-weight: bold;
+    background-color: var(--green-superlight);
+}
+
+.picker-number {
+	transition: all 0.4s;
+	padding: 5px;
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+	background: white;
+}
+
+.fa-chevron-up,
+.fa-chevron-down {
+	margin: 0;
+	padding: 0;
+	color: white;
+    padding: 0 12px;
+}
+
+.fa-chevron-up:active,
+.fa-chevron-down:active {
+    color: black;
+}
+
+.picker-year > .fa-chevron-up,
+.picker-year > .fa-chevron-down {
+    padding: 0 40px;
+}

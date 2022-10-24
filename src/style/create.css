@@ -11,12 +11,22 @@
 	width: 100%;
 }
 
-.form-part-left,
+.form-part-left {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding: 5%;
+    background-color: #93ad18;
+    border-radius: 20px 0 0 20px;
+}
+
 .form-part-right {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
 	padding: 5%;
+    background-color: #93ad18;
+    border-radius: 0 20px 20px 0px;
 }
 
 .form-part-pair {
@@ -60,6 +70,7 @@ select {
 	color: white;
 	background: var(--green-medium);
 	cursor: pointer;
+    border-radius: 5px;
 }
 
 .error {
