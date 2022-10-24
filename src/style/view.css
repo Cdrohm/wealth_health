@@ -22,13 +22,15 @@
 .view-top-select,
 .view-top-search {
 	display: flex;
-	align-items: baseline;
+	align-items: center;
+    background-color: #93ad18;
+    border-radius: 10px;
+    padding: 5px;
 }
 
 .view-top-search input {
-	padding: 10px;
+	border-radius: 5px;
 	border: 0;
-	border-bottom: 1px solid black;
 }
 
 .active-page {

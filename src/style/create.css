@@ -54,6 +54,8 @@ select {
 .simple-select-menu-select,
 .simple-select-menu-label {
 	padding: 0px !important;
+    border-radius: 5px;
+    border: 0;
 }
 
 .department {

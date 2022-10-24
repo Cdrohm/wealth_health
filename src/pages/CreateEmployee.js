@@ -17,8 +17,8 @@ const Create = () => {
   const [dataStored, setDataStored] = useState(false)
 
   // the set component reverts to its default after the form is submitted
-  const employeesCtx = useEmployeesContext()
-  const initComponent = employeesCtx.initComponent
+  const employeesContext = useEmployeesContext()
+  const initComponent = employeesContext.initComponent
   const {setInit} = initComponent
 
   // form values
@@ -106,8 +106,8 @@ const Create = () => {
       return
     } else {
       // save datas to context store
-      employeesCtx.add(res)
-      employeesCtx.setInitForm(true)
+      employeesContext.add(res)
+      employeesContext.setInitForm(true)
 
       // reset all form
       setFirstName('')
