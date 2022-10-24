@@ -10,7 +10,7 @@ import '../style/App.css'
 function App() {
   return (
     <EmployeeProvider>
-      <BrowserRouter basename="/wealth_health">
+      <BrowserRouter basename="">
         <div className="App">
           <Header />
           <Routes>
