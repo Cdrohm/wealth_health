@@ -35,7 +35,8 @@ const Header = () => {
         <nav className='App-header'>
             { /* logo */ }
             <img className='logo' src={logoOnly} alt='logo' />
-            <img className='logobas' src={logoName} alt='logoName' />
+            <span className='name'>WEALTH HEALTH</span>
+            <img className='logo_name' src={logoName} alt='logoName' />
             <div className='nav-btns'>
                 <Link to='/' className={`create-button ${createClicked && 'active'}`} onClick={setBtnBackground} ref={create}>CREATE EMPLOYEE</Link>
                 <Link to='/view' className={`view-button ${viewClicked && 'active'}`} onClick={setBtnBackground} ref={view}>CURRENT EMPLOYEES</Link>

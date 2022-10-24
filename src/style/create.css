@@ -103,6 +103,10 @@ select {
 	.form-parts {
 		flex-direction: column;
 	}
+    .form-part-right, 
+    .form-part-left {
+        border-radius: 20px;
+    }
 	.department {
 		flex-direction: column;
 	}
