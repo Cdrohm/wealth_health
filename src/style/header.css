@@ -16,13 +16,6 @@
 	transition: 0.4s;
 }
 
-.name {
-	padding: 10px;
-	border: 2px solid var(--green-light);
-	border-radius: 5px;
-	font-size: 3.5rem;
-}
-
 .nav-btns {
 	display: flex;
 	width: 100%;
@@ -41,8 +34,64 @@
 	width: 50%;
 }
 
+/* logo name */
+p {
+    text-transform: uppercase;
+    color: #222;
+    font-weight: 900;
+    color: transparent;
+    font-size: 0px;
+	margin: 20px;
+}
+p span {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    font-size: 3.5rem;
+}
+p span::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+	border-radius: 20px;
+}
 
+p:nth-child(2) {
+    animation: txt-appearance 0s 1.25s forwards;
+}
+
+p:nth-child(2) span::after {
+    background:var(--green-light);
+    animation: slide-in 0.75s 0.3s ease-out forwards,
+    slide-out 0.75s 1.3s ease-out forwards;
+	
+}
+/*----------name animation-----------*/
+@keyframes slide-in {
+    100% {
+        transform: translateX(0%);
+    }
+}
+@keyframes slide-out {
+    100% {
+        transform: translateX(100%)
+    }
+}
+@keyframes txt-appearance {
+    100% {
+        color: #222;
+    }
+}
+
+
+/*----------logo animation-----------*/
 @keyframes App-logo-spin {
+	
 	from {
 		transform: rotate(0deg);
 	}
@@ -52,13 +101,10 @@
 	}
 }
 
-@keyframes Appear-name{
-	
-}
-
 @media (prefers-reduced-motion: no-preference) {
 	.logo {
-		animation: App-logo-spin infinite 40s linear;
+		animation: App-logo-spin infinite 50s linear;
+		animation-delay: 2.4s;
 	}
 }
 

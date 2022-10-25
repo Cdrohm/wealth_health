@@ -2,7 +2,7 @@ import '../style/header.css'
 import { useEffect, useRef, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import logoOnly from '../assets/logoOnly.png'
-import logoName from '../assets/nameOnly.png'
+//import logoName from '../assets/nameOnly.png'
 
 
 const Header = () => {
@@ -35,8 +35,10 @@ const Header = () => {
         <nav className='App-header'>
             { /* logo */ }
             <img className='logo' src={logoOnly} alt='logo' />
+            <p>
             <span className='name'>WEALTH HEALTH</span>
-            <img className='logo_name' src={logoName} alt='logoName' />
+            </p>
+           { /* <img className='logo_name' src={logoName} alt='logoName' /> */ }
             <div className='nav-btns'>
                 <Link to='/' className={`create-button ${createClicked && 'active'}`} onClick={setBtnBackground} ref={create}>CREATE EMPLOYEE</Link>
                 <Link to='/view' className={`view-button ${viewClicked && 'active'}`} onClick={setBtnBackground} ref={view}>CURRENT EMPLOYEES</Link>
