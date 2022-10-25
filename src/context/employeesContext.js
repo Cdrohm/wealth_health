@@ -32,7 +32,7 @@ function EmployeeProvider(props) {
         setEmployees([...employees, employee])
     }
 
-    //remove employee by index
+    //remove employee by index | search
     function removeByIndex(index) {
         const copy = [...employees]
         copy.splice(index, 1)
