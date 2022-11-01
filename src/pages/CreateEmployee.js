@@ -11,6 +11,7 @@ import { useEmployeesContext } from '../context/employeesContext'
  * @returns a form with a few inputs and a submit button.
  */
 const Create = () => {
+  //options dpt
   const departmentOptions = ["Sales", "Marketing", "Engineering", "Human Resources", "Legal"]
 
   // modal display when new data is stored
