@@ -2,7 +2,9 @@ import '../style/create.css'
 import React, { useRef, useState } from 'react'
 import Datepicker from '../components/DatePicker'
 import ModalConfirm from '../components/Modal'
-import { SimpleSelectMenu } from 'simple-select-menu'
+//import { SimpleSelectMenu } from 'simple-select-menu'
+import { DropdownMenu } from '../dropdown_menu/src/lib/index'
+
 import { states } from '../utils/states'
 import { useEmployeesContext } from '../context/employeesContext'
 
@@ -171,7 +173,7 @@ const Create = () => {
               </div>
               <div className='error' ref={errCity}> </div>
               <div className='form-part-pair'>
-                <SimpleSelectMenu label="State" options={states} value={stateName} placeholder="Please choose a State" log={false} setvalue={setStateName} initComponent={initComponent} />
+                <DropdownMenu label="State" options={states} value={stateName} placeholder="Please choose a State" log={false} setvalue={setStateName} initComponent={initComponent} />
               </div>
               <div className='error' ref={errStateName}> </div>
               <div className='form-part-pair'>
@@ -185,7 +187,7 @@ const Create = () => {
         </div>
 
         <div className='department form-part-pair'>
-          <SimpleSelectMenu label="Department" options={departmentOptions} value={department} placeholder="Please choose a Department" log={false} setvalue={setDepartment} initComponent={initComponent} />
+          <DropdownMenu label="Department" options={departmentOptions} value={department} placeholder="Please choose a Department" log={false} setvalue={setDepartment} initComponent={initComponent} />
         </div>
         <div className='error errDepartment' ref={errDepartment}> </div>
         <input className='save-btn' type='submit' value='Save' />

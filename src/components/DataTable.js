@@ -12,7 +12,7 @@ import { useEmployeesContext } from '../context/employeesContext'
  * @returns a table of employees
  */
  const DataTable = ({ data, start }) => {
-    // legends of table
+    // legends of columns table
     const columns = {
         'firstName': 'First Name',
         'lastName': 'Last Name',

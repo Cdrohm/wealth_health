@@ -2,7 +2,9 @@ import '../style/view.css'
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import DataTable from '../components/DataTable'
-import { SimpleSelectMenu } from 'simple-select-menu'
+//import { SimpleSelectMenu } from 'simple-select-menu'
+import { DropdownMenu } from '../dropdown_menu/src/lib/index'
+
 import { useEmployeesContext } from '../context/employeesContext'
 
 
@@ -126,7 +128,7 @@ const View = () => {
     <div className='view'>
       <div className='view-top'>
         <div className='view-top-select'>
-          <SimpleSelectMenu label='Show' options={['10', '25', '50', '100']} log={false} setvalue={changeDisplayNum} initComponent={initComponent} />
+          <DropdownMenu label='Show' options={['10', '25', '50', '100']} log={false} setvalue={changeDisplayNum} initComponent={initComponent} />
           entries
         </div>
         <div className='view-top-search'>Search

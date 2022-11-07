@@ -51,8 +51,8 @@ select {
 	color: rgb(52, 52, 52);
 }
 
-.simple-select-menu-select,
-.simple-select-menu-label {
+.dropdown-select,
+.dropdown-label {
 	padding: 0px !important;
     border-radius: 5px;
     border: 0;
