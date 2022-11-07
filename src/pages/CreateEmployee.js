@@ -2,7 +2,6 @@ import '../style/create.css'
 import React, { useRef, useState } from 'react'
 import Datepicker from '../components/DatePicker'
 import ModalConfirm from '../components/Modal'
-//import { SimpleSelectMenu } from 'simple-select-menu'
 import { DropdownMenu } from '../dropdown_menu/src/lib/index'
 
 import { states } from '../utils/states'

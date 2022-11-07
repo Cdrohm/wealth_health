@@ -2,7 +2,6 @@ import '../style/view.css'
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import DataTable from '../components/DataTable'
-//import { SimpleSelectMenu } from 'simple-select-menu'
 import { DropdownMenu } from '../dropdown_menu/src/lib/index'
 
 import { useEmployeesContext } from '../context/employeesContext'
