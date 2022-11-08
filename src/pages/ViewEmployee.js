@@ -2,8 +2,8 @@ import '../style/view.css'
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import DataTable from '../components/DataTable'
-import { DropdownMenu } from '../dropdown_menu/src/lib/index'
-//import { DropdownMenu } from 'plugin-dropdown-menu'
+//import { DropdownMenu } from '../dropdown_menu/src/lib/index'
+import { DropdownMenu } from 'plugin-dropdown-menu-select'
 import { useEmployeesContext } from '../context/employeesContext'
 
 
