@@ -3,7 +3,7 @@ import React, { useRef, useState } from 'react'
 import Datepicker from '../components/DatePicker'
 import ModalConfirm from '../components/Modal'
 import { DropdownMenu } from '../dropdown_menu/src/lib/index'
-
+//import { DropdownMenu } from 'plugin-dropdown-menu'
 import { states } from '../utils/states'
 import { useEmployeesContext } from '../context/employeesContext'
 
@@ -11,6 +11,7 @@ import { useEmployeesContext } from '../context/employeesContext'
  * a form for create a new employee
  * @returns a form with a few inputs and a submit button.
  */
+console.log(DropdownMenu);
 const Create = () => {
   //options dpt
   const departmentOptions = ["Sales", "Marketing", "Engineering", "Human Resources", "Legal"]

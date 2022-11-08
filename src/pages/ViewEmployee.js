@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import DataTable from '../components/DataTable'
 import { DropdownMenu } from '../dropdown_menu/src/lib/index'
-
+//import { DropdownMenu } from 'plugin-dropdown-menu'
 import { useEmployeesContext } from '../context/employeesContext'
 
 
@@ -11,6 +11,8 @@ import { useEmployeesContext } from '../context/employeesContext'
  * table of employees + search bar + a number of results per page selector + a pagination
  * @returns View - React component
  */
+ console.log(DropdownMenu);
+
 const View = () => {
   const employeesContext = useEmployeesContext()
 
