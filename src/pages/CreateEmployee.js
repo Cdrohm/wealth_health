@@ -12,6 +12,8 @@ import { useEmployeesContext } from '../context/employeesContext'
  * @returns a form with a few inputs and a submit button.
  */
 console.log(DropdownMenu);
+console.log('plugin-dropdown-menu-select');
+
 const Create = () => {
   //options dpt
   const departmentOptions = ["Sales", "Marketing", "Engineering", "Human Resources", "Legal"]
