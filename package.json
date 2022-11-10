@@ -44,7 +44,7 @@
     ]
   },
   "devDependencies": {
-    "plugin-dropdown-menu-select": "^0.1.4",
+    "plugin-dropdown-menu-select": "^0.1.5",
     "webpack-node-externals": "^3.0.0"
   }
 }
