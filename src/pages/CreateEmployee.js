@@ -11,7 +11,6 @@ import { useEmployeesContext } from '../context/employeesContext'
  * a form for create a new employee
  * @returns a form with a few inputs and a submit button.
  */
-console.log(DropdownMenu);
 
 const Create = () => {
   //options dpt

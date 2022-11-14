@@ -11,7 +11,6 @@ import { useEmployeesContext } from '../context/employeesContext'
  * table of employees + search bar + a number of results per page selector + a pagination
  * @returns View - React component
  */
- console.log(DropdownMenu);
 
 const View = () => {
   const employeesContext = useEmployeesContext()
