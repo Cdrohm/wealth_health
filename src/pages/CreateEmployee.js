@@ -3,7 +3,7 @@ import React, { useRef, useState } from 'react'
 import Datepicker from '../components/DatePicker'
 import ModalConfirm from '../components/Modal'
 //import { DropdownMenu } from '../dropdown_menu/src/lib/index'
-import { DropdownMenu } from 'plugin-dropdown-menu-select'
+import { DropdownMenu } from 'dropdown-menu-select-plugin'
 import { states } from '../utils/states'
 import { useEmployeesContext } from '../context/employeesContext'
 
