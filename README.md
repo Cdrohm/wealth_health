@@ -1,3 +1,45 @@
+
+### Presentation
+
+
+You work for the technology department of a large financial company, WealthHealth.
+
+This company uses an internal web application, called HRnet, which manages employee records. The app is old and uses jQuery on the front end, which leads to massive bugs and increased internal complaints. Your development team has been struggling for some time now to upgrade the app.
+
+1) **Convert** the entire HRNet project to React.
+2) **Convert** one of the four current jQuery plugins to React. Replace the 3 remaining jQuery plugins with React components coded or imported by existing libraries.
+3) **Perform Lighthouse** benchmarks comparing the old and new app.
+
+------------
+
+
+### Front-End part
+You can use NPM or YARN.
+You need to clone the project locally
+
+>  https://github.com/Cdrohm/wealth_health.git
+
+Inside the local repositery, you need to install NPM
+
+> npm install
+
+And launch the application
+
+> npm start
+
+The application run into default URL http://localhost:3000
+
+------------
+### Plugin conversion
+the converted plugin is available at the following repositery
+
+> https://github.com/Cdrohm/Dropdown-menu
+
+and at the following url in npmjs.com
+
+> https://www.npmjs.com/package/dropdown-menu-select-plugin
+
+------------
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
